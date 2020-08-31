@@ -1,9 +1,15 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import  home  from './components/home'
+import about from './components/about'
+import  contact  from './components/contact'
+import  noMatch  from './components/noMatch'
+import  { Layout } from './components/Layout'
 
 function App() {
   return (
     <React.Fragment>
+      <Layout>
       <Router>
         <Switch>
           <Route exact path="/" component={home} />
@@ -12,6 +18,7 @@ function App() {
           <Route component={noMatch} />
         </Switch>
       </Router>
+      </Layout>
     </React.Fragment>
   );
 }
