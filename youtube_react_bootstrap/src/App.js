@@ -5,10 +5,12 @@ import about from './components/about'
 import  contact  from './components/contact'
 import  noMatch  from './components/noMatch'
 import  { Layout } from './components/Layout'
+// import  navBar from './components/navBar'
 
 function App() {
   return (
     <React.Fragment>
+      {/* <navBar/> */}
       <Layout>
       <Router>
         <Switch>
